@@ -5,7 +5,7 @@ import { NavBar, SideBar } from "../components";
 const drawerwith = 240;
 export const JournalLayout = ({children}) => {
   return (
-    <Box sx={{ display:'flex'}}>
+    <Box sx={{ display:'flex'}} className="animate_animated animate_fadeIn animate_faster">
         {/* NavBar */}
         <NavBar drawerwith={ drawerwith }/>
         {/* SideBar */}
