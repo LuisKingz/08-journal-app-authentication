@@ -1,11 +1,11 @@
 import { useSelector } from "react-redux";
-
+import { ToastContainer,Slide } from 'react-toastify'
 import { Drawer, Box, Toolbar, Typography, Divider, List } from "@mui/material";
 import { SideBarItem } from "./";
 
 export const SideBar = ({ drawerwith = 240 }) => {
   const { displayName } = useSelector((state) => state.auth);
-  const { notes, active } = useSelector((state) => state.journal);
+  const { notes } = useSelector((state) => state.journal);
 
 
   return (
@@ -34,6 +34,7 @@ export const SideBar = ({ drawerwith = 240 }) => {
           ))}
         </List>
       </Drawer>
+      <ToastContainer draggable={true} transition={Slide}/>
     </Box>
   );
 };

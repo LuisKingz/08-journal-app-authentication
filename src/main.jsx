@@ -6,6 +6,7 @@ import { BrowserRouter } from "react-router-dom";
 import { JournalApp } from "./JournalApp";
 import { store } from "./store";
 import "./styles.css";
+import 'react-toastify/dist/ReactToastify.css';
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
